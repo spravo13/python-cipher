@@ -2,7 +2,6 @@
 """Check remainder from alphabet and rearrange letters based on outcome"""
 
 PIN = int(input("Enter your number: "))
-
 LETTERS = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", \
 "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 REMAINDER = PIN % 26
@@ -20,4 +19,8 @@ else:
         del LETTERS[NUMBER]
         COUNT = COUNT + 1
 
+#Turn typed in message into a list and all lowercase
+MESSAGE = list(input("Enter your message: ").lower())
+
 print(LETTERS)
+print(MESSAGE)
